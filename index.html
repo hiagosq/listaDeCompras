@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/img_compras.png" type="image/x-icon">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <main>
+        <h1>Compras Com Muito Carinho</h1>
+        <img src="img/img_compras.png" alt="sacola com compras">
+        <form>
+            <input type="text" class="input_item" id="input_item"  
+            placeholder="digite o item que deseja adicionar">
+            <br>
+            <button class="button_item" id="adicionar_item">Salvar Item</button>
+        </form>
+
+        <div class="container_lista">
+            <h2>Lista De Compras</h2>
+            <hr>
+            <ul id="lista_de_compras"></ul>
+            <p class="mensagem-lista-vazia"> Não há nenhum item na lista no momento.</p>
+        </div>
+    </main>
+    <script src="script.js" type="module"></script>
+
+</body>
+</html>

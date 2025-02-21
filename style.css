@@ -1,0 +1,160 @@
+@font-face {
+    font-family: internet_friends;
+    src: url('fonte/Internet Friends.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(138, 204, 218);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {
+    background-color: beige;
+    width: 100%;
+    max-width: 700px;
+    min-height: 800px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+h1 {
+    color: rgb(144, 33, 196);
+    font-family: internet_friends;
+    font-size: 3rem;
+    text-align: center;
+}
+
+p{
+    margin-left: 11px;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.input_item {
+    width: 100%;
+    max-width: 580px;
+    height: 43px;
+    border-radius: 30px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+#adicionar_item {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    background-color: rgb(200, 120, 237);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#adicionar_item:hover {
+    background-color: rgb(180, 90, 217);
+}
+
+.container_lista {
+    width: 100%;
+    border: solid 2px black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(144, 33, 196);
+    font-family: internet_friends;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#lista_de_compras {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+.lista_item_container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.input-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.lista_item_container p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.texto_data {
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 340px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .input_item {
+        width: 90%;
+    }
+
+    #adicionar_item {
+        width: 90%;
+    }
+
+    .container_lista {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .lista_item_container p {
+        font-size: 1rem;
+    }
+}
